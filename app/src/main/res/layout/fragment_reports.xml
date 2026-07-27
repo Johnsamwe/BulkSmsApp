@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_paper"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JS.DEV · DAR ES SALAAM"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:textColor="@color/brand_primary_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="16dp"
+            android:text="Ripoti"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/brand_ink" />
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.card.MaterialCardView style="@style/Card.Section" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginEnd="6dp">
+                <LinearLayout android:orientation="vertical" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tvTotalCampaigns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/brand_primary_dark" android:text="0" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jumla ya Kampeni" android:textSize="11sp" android:textColor="@color/brand_muted" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/Card.Section" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="6dp">
+                <LinearLayout android:orientation="vertical" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tvTotalContacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/brand_primary_dark" android:text="0" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Walengwa (Jumla)" android:textSize="11sp" android:textColor="@color/brand_muted" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.card.MaterialCardView style="@style/Card.Section" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginEnd="6dp">
+                <LinearLayout android:orientation="vertical" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tvTotalSent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/status_sent" android:text="0" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Zilizotumwa" android:textSize="11sp" android:textColor="@color/brand_muted" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/Card.Section" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="6dp">
+                <LinearLayout android:orientation="vertical" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tvTotalDelivered" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/status_delivered" android:text="0" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Zilizofika" android:textSize="11sp" android:textColor="@color/brand_muted" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.card.MaterialCardView style="@style/Card.Section" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginEnd="6dp">
+                <LinearLayout android:orientation="vertical" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tvTotalFailed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/status_failed" android:text="0" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Zilizoshindwa" android:textSize="11sp" android:textColor="@color/brand_muted" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/Card.Section" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="6dp">
+                <LinearLayout android:orientation="vertical" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tvSuccessRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/brand_amber" android:text="0%" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kiwango cha Mafanikio" android:textSize="11sp" android:textColor="@color/brand_muted" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <TextView
+            style="@style/Label.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="MGAWANYO WA MATOKEO" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Card.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <com.jsdev.bulksms.PieChartView
+                    android:id="@+id/pieChart"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp" />
+
+                <LinearLayout
+                    android:id="@+id/pieLegend"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/Label.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="TAKWIMU KWA JUMLA" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Card.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+            <com.jsdev.bulksms.BarChartView
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="16dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/Label.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="MWENENDO WA KIWANGO CHA MAFANIKIO" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Card.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp">
+            <com.jsdev.bulksms.LineChartView
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:padding="16dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            style="@style/Label.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="HISTORIA YA KAMPENI" />
+
+        <ListView
+            android:id="@+id/lvHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/brand_line"
+            android:dividerHeight="1dp" />
+
+        <TextView
+            android:id="@+id/tvEmptyHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:text="Bado hakuna kampeni iliyokamilika"
+            android:textColor="@color/brand_muted"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Button.Outline"
+            android:id="@+id/btnExportHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="12.5sp"
+            android:text="Pakua Historia Yote (.csv)" />
+
+    </LinearLayout>
+</ScrollView>
