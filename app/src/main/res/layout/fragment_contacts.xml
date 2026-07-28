@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/brand_paper"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JS.DEV · DAR ES SALAAM"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:textColor="@color/brand_primary_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp"
+        android:text="Wasiliani"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/brand_ink" />
+
+    <EditText
+        android:id="@+id/etContactSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tafuta kwa jina au namba..."
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tvContactCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12.5sp"
+        android:textColor="@color/brand_muted"
+        android:layout_marginBottom="8dp"
+        android:text="Hakuna namba zilizopakiwa bado" />
+
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/brand_line"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/tvContactsEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/brand_muted"
+        android:text="Nenda kwenye tab ya 'Tuma' kupakia faili la namba kwanza"
+        android:visibility="visible" />
+
+</LinearLayout>
