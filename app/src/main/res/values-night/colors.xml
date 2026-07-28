@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Hii inabatilisha (override) thamani za rangi zilezile zilizoko
+    values/colors.xml, kwa ajili ya dark mode. Theme moja tu (Theme.BulkSms
+    kwenye values/themes.xml) inatumika kwa mchana na usiku — inachobadilika
+    ni RANGI zenyewe, si muundo wa theme. Hii ndiyo njia sahihi ya Android;
+    kuandika rangi moja kwa moja (#RRGGBB) ndani ya theme badala ya kutumia
+    @color/... ndiko kulikosababisha crash kwenye BottomNavigationView.
+    -->
+    <color name="brand_primary">#3B9A73</color>
+    <color name="brand_primary_dark">#0B140F</color>
+    <color name="brand_primary_light">#1C2A22</color>
+    <color name="brand_amber">#D9B25C</color>
+    <color name="brand_amber_bg">#2A2416</color>
+    <color name="brand_red">#E08A76</color>
+    <color name="brand_red_bg">#2E1C18</color>
+    <color name="brand_paper">#12190F</color>
+    <color name="brand_card">#1C241F</color>
+    <color name="brand_ink">#F2F1EA</color>
+    <color name="brand_ink_light">#0B140F</color>
+    <color name="brand_muted">#B7B29E</color>
+    <color name="brand_line">#2C3830</color>
+
+    <color name="status_waiting">#B7B29E</color>
+    <color name="status_waiting_bg">#232922</color>
+    <color name="status_sending">#7FB3E0</color>
+    <color name="status_sending_bg">#1B2733</color>
+    <color name="status_sent">#3B9A73</color>
+    <color name="status_sent_bg">#1C2A22</color>
+    <color name="status_delivered">#6FCF9E</color>
+    <color name="status_delivered_bg">#1A2E24</color>
+    <color name="status_failed">#E08A76</color>
+    <color name="status_failed_bg">#2E1C18</color>
+</resources>

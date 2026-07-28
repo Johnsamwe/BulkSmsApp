@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Kutuma SMS -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Kuona majina ya laini za simu (Vodacom/Tigo/Airtel/n.k.) kwenye simu zenye SIM 2 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Kuagiza namba moja kwa moja kutoka kwenye Anwani za simu -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".BulkSmsApplication"
+        android:allowBackup="true"
+        android:label="Bulk SMS - JS.Dev"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
+        android:theme="@style/Theme.BulkSms"
+        android:usesCleartextTraffic="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PinLockActivity" android:exported="false" />
+        <activity android:name=".DashboardActivity" android:exported="false" />
+
+        <!-- Receivers za kufuatilia status ya kila SMS -->
+        <receiver android:name=".SmsSentReceiver" android:exported="false" />
+        <receiver android:name=".SmsDeliveredReceiver" android:exported="false" />
+
+    </application>
+</manifest>

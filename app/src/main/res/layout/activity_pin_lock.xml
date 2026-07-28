@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/brand_paper"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔒"
+        android:textSize="40sp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Imefungwa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/brand_ink" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="24dp"
+        android:text="Weka PIN yako kuendelea"
+        android:textSize="13sp"
+        android:textColor="@color/brand_muted" />
+
+    <EditText
+        android:id="@+id/etPin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:letterSpacing="0.3"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:imeOptions="actionDone" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Button.Primary"
+        android:id="@+id/btnUnlock"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Fungua" />
+
+</LinearLayout>
